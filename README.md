@@ -1,55 +1,68 @@
-Cüzdanlık, kişisel harcamalarınızı takip etmenizi sağlayan bir mobil uygulamadır. Uygulama, harcamalarınızı kategorilere ayırarak analiz etmenizi ve aylık trendlerinizi görmenizi sağlar. Uygulama ayrıca karanlık mod desteği sunar.
+# Cüzdanlık - Harcama Takip Uygulaması
 
-Özellikler
+## Genel Bakış
+Cüzdanlık, kişisel finans yönetimi için tasarlanmış bir uygulamadır. Harcamalarınızı takip etmenize, bütçenizi yönetmenize ve harcama alışkanlıklarınızı anlamanıza yardımcı olur. Günlük harcama takibi, detaylı raporlar ve özelleştirilebilir kategoriler gibi özelliklerle, Cüzdanlık finans yönetiminde sorunsuz bir deneyim sunmayı amaçlamaktadır.
 
-Harcamaları Kategorilere Ayırma: Harcamalarınızı farklı kategorilere ayırabilirsiniz (örneğin, Kira, Faturalar, Market, Eğlence, Ulaşım, Sağlık, vb.).
-Alt Kategoriler: Kategoriler altında alt kategoriler tanımlayarak daha detaylı harcama takibi yapabilirsiniz (örneğin, Faturalar -> Elektrik, Faturalar -> Su).
-Tarih Filtreleme: Belirli bir tarih aralığında yapılan harcamaları filtreleyebilirsiniz.
-Tekrarlayan Harcamalar: Günlük, Aylık veya Yıllık tekrarlayan harcamalar ekleyebilirsiniz.
-Raporlama ve Analiz: Harcamalarınızı kategori bazında dağılımını ve aylık trendleri grafiklerle görüntüleyebilirsiniz.
+## Özellikler
+- **Günlük Harcama Takibi**: Günlük harcamalarınızı hızlıca ekleyin ve görüntüleyin.
+- **Kategorize Edilmiş Harcamalar**: Harcamalarınızı özelleştirilebilir kategoriler ve alt kategoriler halinde organize edin.
+- **Düzenli Harcamalar**: Düzenli ödemeler için tekrar eden harcamalar ayarlayın.
+- **Detaylı Raporlar**: Harcama alışkanlıklarınızı analiz etmek için aylık raporlar oluşturun.
+- **Karanlık Mod Desteği**: Rahat bir görüntüleme için açık ve koyu mod arasında geçiş yapın.
+- **Gizlilik Politikası**: Verilerinizin güvenliğini sağlamak için kapsamlı bir gizlilik politikası.
 
-Harcama Detayları Tablosu: Harcamalarınızın detaylarını tablo şeklinde inceleyebilirsiniz.
+## Kurulum
+1. **Depoyu Klonlayın**:
+    ```sh
+    git clone https://github.com/arthlor/expense-tracker-app.git
+    cd expense-tracker-app
+    ```
 
-Kullanım Kılavuzu
+2. **Bağımlılıkları Yükleyin**:
+    ```sh
+    flutter pub get
+    ```
 
-Harcama Ekleme:
-Ana ekrandan "Gider Ekle" butonuna tıklayın.
-Harcama adı, tutar, kategori ve tarih bilgilerini girin.
-Gerekirse alt kategori ve tekrar aralığı seçin.
-"Ekle" butonuna tıklayarak harcamayı kaydedin.
+3. **Uygulamayı Çalıştırın**:
+    ```sh
+    flutter run
+    ```
 
-Harcamaları Görüntüleme:
-Ana ekranda harcamalarınızın listesini görebilirsiniz.
-Harcamalar, eklenme tarihine göre sıralanmıştır.
+## Kullanım
+1. **Ana Ekran**: Günlük toplam harcamalarınızı görüntüleyin ve tüm harcamalarınızın bir listesini görün. Yeni harcamalar eklemek için Yüzen Eylem Düğmesini (FAB) kullanın.
+2. **Harcama Ekle**: Harcamanızın detaylarını doldurun, bir kategori seçin ve kaydedin. Tekrar eden harcamalar da ayarlayabilirsiniz.
+3. **Raporlar**: Harcamalarınızı analiz etmek için detaylı aylık raporlar oluşturun. Kategori ve alt kategoriye göre filtreleyin.
+4. **Ayarlar**: Açık ve koyu mod arasında geçiş yapın, hakkında sayfasını görüntüleyin ve gizlilik politikasını okuyun.
 
-Harcamaları Düzenleme ve Silme:
-Listede bir harcamanın üzerine tıklayarak düzenleme ekranına geçebilirsiniz.
-Harcama detaylarını güncelleyebilir veya silebilirsiniz.
+## Katkıda Bulunma
+1. **Depoyu Çatallayın**: Bu deposunu sağ üstteki "Fork" düğmesine tıklayın.
+2. **Çatalınızı Klonlayın**: `arthlor` yerine GitHub kullanıcı adınızı yazın.
+    ```sh
+    git clone https://github.com/arthlor/expense-tracker-app.git
+    ```
+3. **Bir Dal Oluşturun**:
+    ```sh
+    git checkout -b feature-name
+    ```
+4. **Değişikliklerinizi Yapın**: Özelliğinizi veya hata düzeltmenizi uygulayın.
+5. **Yapın ve Gönderin**:
+    ```sh
+    git add .
+    git commit -m "Değişikliklerin açıklaması"
+    git push origin feature-name
+    ```
+6. **Bir Çekme İsteği Oluşturun**: Orijinal depoya gidin ve çatalınızdan bir çekme isteği oluşturun.
 
-Raporlama ve Analiz:
-"Raporlar" sekmesine geçerek harcamalarınızı kategori bazında dağılımını ve aylık trendlerini görebilirsiniz.
-Grafikler, harcamalarınız hakkında detaylı bilgi sunar.
+## Lisans
+Bu proje MIT Lisansı ile lisanslanmıştır - detaylar için [LICENSE](LICENSE) dosyasına bakın.
 
-Teknolojik Detaylar
-Flutter: Uygulama, Google'ın açık kaynaklı UI yazılım geliştirme kiti olan Flutter kullanılarak geliştirilmiştir.
-Provider: Durum yönetimi için Provider paketi kullanılmıştır.
-Syncfusion: Grafikler ve tablo görselleştirmeleri için Syncfusion paketleri kullanılmıştır.
+## İletişim
+- **Geliştirici**: Anıl Karaca
+- **Web Sitesi**: [anilkaraca.com](https://anilkaraca.com/)
+- **LinkedIn**: [linkedin.com/in/anil-karaca](https://www.linkedin.com/in/anil-karaca/)
+- **X**: [x.com/anilkaraca17](https://x.com/anilkaraca17)
 
-Katkıda Bulunma
-Katkıda bulunmak isterseniz, lütfen aşağıdaki adımları izleyin:
+## Teşekkürler
+- Flutter topluluğuna muhteşem destek ve kaynakları için teşekkürler.
+- İkonlar [Material Icons](https://material.io/resources/icons/) tarafından sağlanmıştır.
 
-Depoyu Fork Et: GitHub üzerinde projeyi fork edin.
-Yeni Bir Dal Oluştur: Değişiklikleriniz için yeni bir dal oluşturun (feature/harcama-ekle).
-
-Değişiklikleri Yapın: İlgili değişiklikleri yapın ve test edin.
-
-Dalınıza Commit Edin: Yaptığınız değişiklikleri dalınıza commit edin (git commit -m 'Yeni harcama ekleme özelliği').
-
-Dalınızı Push Edin: Dalınızı orijinal repoya push edin (git push origin feature/harcama-ekle).
-
-Pull Request Açın: GitHub üzerinden bir pull request açın.
-
-Lisans
-Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasına bakın.
-
-Bu rehber, Cüzdanlık uygulamasının kullanımı ve geliştirilmesi hakkında temel bilgileri sunmaktadır. Daha fazla bilgi ve destek için projenin GitHub sayfasını ziyaret edebilirsiniz.
