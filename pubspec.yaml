@@ -1,0 +1,44 @@
+name: cuzdanlik
+description: Harcamalarını takip et.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.3
+  flutter_svg: ^2.0.10+1
+  syncfusion_flutter_charts: ^25.2.5
+  path_provider: ^2.0.11
+  path: ^1.8.1
+  uuid: ^4.4.0
+  shared_preferences: ^2.0.11
+  google_fonts: ^6.2.1 
+  intl: ^0.19.0
+  syncfusion_flutter_treemap: ^25.2.5
+  flutter_localizations:
+    sdk: flutter
+  page_transition: ^2.0.9
+  animations: ^2.0.11
+  url_launcher: ^6.2.6
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.1.11
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/applogo.png
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/applogo.png"
