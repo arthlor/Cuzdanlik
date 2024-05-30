@@ -14,8 +14,8 @@ Cüzdanlık, kişisel finans yönetimi için tasarlanmış bir uygulamadır. Har
 ## Kurulum
 1. **Depoyu Klonlayın**:
     ```sh
-    git clone https://github.com/arthlor/expense-tracker-app.git
-    cd expense-tracker-app
+    git clone https://github.com/arthlor/cuzdanlik.git
+    cd cuzdanlik
     ```
 
 2. **Bağımlılıkları Yükleyin**:
